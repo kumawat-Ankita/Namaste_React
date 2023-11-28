@@ -1,12 +1,17 @@
 import { CDN_URL } from "../utils/constants";
 
-const ResturantCard = (props) => {
+const RestaurantCard = (props) => {
     const { resData } = props;
 
-    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } = resData?.info;
+    const {
+        cloudinaryImageId,
+        name,
+        cuisines,
+        avgRating,
+        costForTwo } = resData?.info;
     console.log("Error of resData:", resData)
     return (
-        <div className="res-card">
+        <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
             <img className="food-logo"
                 alt="food-logo"
                 src={CDN_URL + cloudinaryImageId} />
@@ -19,4 +24,4 @@ const ResturantCard = (props) => {
     )
 }
 
-export default ResturantCard;
+export default RestaurantCard;
