@@ -9,6 +9,7 @@ const RestaurantCard = (props) => {
         cuisines,
         avgRating,
         costForTwo } = resData?.info;
+    console.log("hello wolrd");
     console.log("Error of resData:", resData)
     return (
         <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
